@@ -4,99 +4,15 @@
 
 <TITLE>BEM VINDO!!!</TITLE>
 
-<meta charset="UTF-8">
-
-<style type="text/css"> 
-body { 
-  background:#FFFFFF; 
-  font-size:1.25ex; 
-  font-family:arial,helvetica,freesans,sans-serif; 
-  margin:5px 0px 5px 5px; 
-} 
-html>body { 
-  background:#FFFFFF; 
-  font:x-small arial,helvetica,freesans,sans-serif; 
-  margin:5px 0px 5px 5px; 
-  padding:0; 
-} 
-a { 
-  text-decoration:none; 
-  display:block; 
-  color:#000000; 
-  font-weight:normal; 
-  font-family:arial,freesans,helvetica,sans-serif; 
-} 
-* { 
-  padding:0; 
-  margin:0; 
-} 
-#menu { 
-  width:14.2em; 
-  border-top:1px solid red; 
-  background-color:#CCCCCC; 
-position:absolute; 
-  top:0; 
-  left:0; 
-  font-family:verdana,arial,freesans,helvetica; 
-} 
-#menu ul { 
-  background-color:#CCCCCC; /*Cor de background*/ 
-} 
-#menu ul li { 
-  border-bottom:1px solid #333333; /*Cor da borda*/ 
-  list-style:none; 
-_height:2em; 
-} 
-#menu ul li a { 
-  color:#000000; /*Cor do Texto*/ 
-  height:1%; 
-  padding:0.3em 0.5em; 
-  font-family:verdana,arial,freesans,helvetica;	 
-} 
-#menu ul li a { 
-  padding:0.4em 0.5em; 
-} 
-#menu ul li a:hover { 
-  background-color:#666666; /*Cor de Fundo quando selecionado*/ 
-  
-}  
-#menu dl { 
-  margin:1em 0 0.5em 1em; 
-  padding-bottom:1px; 
-  font-family:arial; 
-} 
-#menu dl dd.diff { 
-  background:transparent; 
-  padding-left:0px; 
-} 
-#menu .rel { 
-  height:1.7em; 
-  padding-top:0.4em; 
-} 
-#menu .e, #menu .d { 
-   display:inline;
-}
-
-div.box {
-	height: 100px; 
-	width: 320px;
-	display: inline-block;
-}
-
-#style1 { 
-  font-family: Consolas; 
-  font-size: 50px; 
-  font-weight: bold; 
-  color: #000000;
-  text-align: center; 
-} 
- 
-</style>
-
- 
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">	
+    <script src="jquery.min.js"></script>
+    <script src="findtextindocument.js"></script>
 </HEAD>
 
 <BODY>
+
+
 
 <TABLE BORDER="2" BGCOLOR="blue" >
 
@@ -117,6 +33,12 @@ div.box {
 
 <p> 
 
+ <div class="find-in-document-container">
+      <input type="text" id="txt-to-find" value="" oninput="findInDocument({position: 0})"/>
+      <input type="button" value="Prev" onclick="findInDocument({position: -1})"/>
+      <input type="button" value="Next" onclick="findInDocument({position: 1})"/>
+    </div>
+
 
 <div id="style1">
 
@@ -126,30 +48,37 @@ div.box {
 
 <div class="box">
     <a href="https://scratch.mit.edu/projects/550645298/embed"/><IMG SRC="imagens\lixo.jpg" BORDER="5" WIDTH="300" HEIGHT="300" HSPACE="30" VSPACE="70" ALT="LIXO NO LIXO"></a>
+    <span> Feito por: Mário Pina - </span>
     <span> Lixo no Lixo </span>
 </div>
 <div class="box">
     <a href="https://scratch.mit.edu/projects/535185974/embed"/><IMG SRC="imagens\Carro.jpg" BORDER="5" WIDTH="300" HEIGHT="300" HSPACE="30" VSPACE="70" ALT="CARRO"></a>
+    <span> Feito por: Mário Pina - </span>
     <span> Carro </span>
 </div>
 <div class="box">
     <a href="https://scratch.mit.edu/projects/530719898/embed"/><IMG SRC="imagens\ladybug.jpg" BORDER="5" WIDTH="300" HEIGHT="300" HSPACE="30" VSPACE="70" ALT="Lady Bug"></a>
+    <span> Feito por: Mário Pina - </span>
     <span> Lady Bug </span>
 </div>
 <div class="box">
     <a href="https://scratch.mit.edu/projects/553559505/embed"/><IMG SRC="imagens\aviao.jpg" BORDER="5" WIDTH="300" HEIGHT="300" HSPACE="30" VSPACE="70" ALT="Desafio nas alturas"></a>
+    <span> Feito por: Mário Pina - </span>
     <span> Desafio nas alturas </span>
 </div>
 <div class="box">
     <a href="https://scratch.mit.edu/projects/513013746/embed"/><IMG SRC="imagens\robo.jpg" BORDER="5" WIDTH="300" HEIGHT="300" HSPACE="30" VSPACE="70" ALT="Robô"></a>
-    <span> Robô </span>
+ <span> Feito por: Mário Pina - </span> 
+ <span> Robô </span>
 </div>
 <div class="box">
     <a href="https://scratch.mit.edu/projects/512470363/embed"/><IMG SRC="imagens\alura.jpg" BORDER="5" WIDTH="300" HEIGHT="300" HSPACE="30" VSPACE="70" ALT="Ângulos"></a>
+    <span> Feito por: Mário Pina - </span>
     <span> Ângulos </span>
 </div>
 <div class="box">
     <a href="https://scratch.mit.edu/projects/512503761/embed"/><IMG SRC="imagens\nave.jpg" BORDER="5" WIDTH="300" HEIGHT="300" HSPACE="30" VSPACE="70" ALT="Nave"></a>
+    <span> Feito por: Mário Pina - </span>
     <span> Nave </span>
 </div>
 
